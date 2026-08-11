@@ -103,9 +103,14 @@
                             Anda akan dialihkan ke halaman utama dalam 10 detik...
                         </p>
                         
-                        <a href="<?= site_url('home') ?>" class="btn btn-home">
-                            Kembali ke Beranda
-                        </a>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap mt-2">
+                            <a href="<?= site_url('home') ?>" class="btn btn-home">
+                                Kembali ke Beranda
+                            </a>
+                            <a href="<?= site_url('booking/my-bookings') ?>" class="btn btn-outline-danger rounded-pill px-4">
+                                <i class="bi bi-calendar2-check me-1"></i> Lihat Booking Saya
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

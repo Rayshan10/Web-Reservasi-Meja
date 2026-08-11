@@ -78,6 +78,10 @@
             <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
               <a href="<?= site_url('booking') ?>" class="btn-get-started">Book a Table</a>
+              <a href="<?= site_url('booking/my-bookings') ?>" class="btn-watch-video d-flex align-items-center ms-4">
+                <i class="bi bi-calendar2-check"></i>
+                <span>My Booking</span>
+              </a>
             </div>
           </div>
           <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
