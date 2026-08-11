@@ -184,10 +184,12 @@
                 <?= session()->getFlashdata('error') ?>
             </div>
         <?php endif; ?>
-        <?php if (isset($errors) && $errors): ?>
+        <?php $validationErrors = session()->getFlashdata('errors'); ?>
+        <?php if (!empty($validationErrors)): ?>
             <div class="alert alert-warning mx-auto mb-4" style="max-width:760px;" data-aos="fade-up">
-                <ul class="mb-0">
-                    <?php foreach ($errors as $err): ?>
+                <strong><i class="bi bi-exclamation-circle me-1"></i> Mohon periksa kembali:</strong>
+                <ul class="mb-0 mt-1">
+                    <?php foreach ($validationErrors as $err): ?>
                         <li><?= esc($err) ?></li>
                     <?php endforeach; ?>
                 </ul>

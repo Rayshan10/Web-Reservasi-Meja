@@ -82,6 +82,7 @@
                 <?php endif; ?>
                 
                 <form action="<?= site_url('auth/authenticate') ?>" method="post">
+                    <?= csrf_field() ?>
                     <div class="form-floating">
                         <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
                         <label for="email">Email address</label>

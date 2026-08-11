@@ -34,7 +34,7 @@ class Booking extends BaseController
             'email' => 'required|valid_email',
             'tanggal' => 'required|valid_date',
             'waktu' => 'required',
-            'jumlah_tamu' => 'required|numeric',
+            'jumlah_tamu' => 'required',
             'meja_id' => 'required|numeric',
             'catatan' => 'permit_empty'
         ];
@@ -43,6 +43,14 @@ class Booking extends BaseController
             return redirect()->back()
                 ->withInput()
                 ->with('errors', $this->validator->getErrors());
+        }
+
+        // Validasi tanggal tidak boleh masa lalu
+        $tanggal = $this->request->getPost('tanggal');
+        if ($tanggal < date('Y-m-d')) {
+            return redirect()->back()
+                ->withInput()
+                ->with('errors', ['tanggal' => 'Tanggal reservasi tidak boleh di masa lalu.']);
         }
 
         // Ambil data dari form
@@ -55,7 +63,7 @@ class Booking extends BaseController
             'jumlah_tamu' => $this->request->getPost('jumlah_tamu'),
             'meja_id' => $this->request->getPost('meja_id'),
             'catatan' => $this->request->getPost('catatan'),
-            'status' => 'confirmed'
+            'status' => 'pending'
         ];
 
         // Cek ketersediaan meja
@@ -102,7 +110,7 @@ class Booking extends BaseController
     }
 
     /**
-     * Membatalkan booking
+     * Membatalkan booking — hanya pemilik (email di session) yang boleh cancel
      */
     public function cancel($id = null)
     {
@@ -118,7 +126,19 @@ class Booking extends BaseController
                 ->with('error', 'Data booking tidak ditemukan.');
         }
 
-        // Update status menjadi cancelled
+        // Ambil email dari session yang disimpan saat user cek my-bookings
+        $emailSession = session()->get('booking_email');
+
+        if (empty($emailSession) || $booking['email'] !== $emailSession) {
+            return redirect()->to('booking/my-bookings')
+                ->with('error', 'Akses ditolak. Kamu tidak berhak membatalkan booking ini.');
+        }
+
+        if ($booking['status'] === 'cancelled') {
+            return redirect()->to('booking/my-bookings')
+                ->with('error', 'Booking ini sudah dibatalkan sebelumnya.');
+        }
+
         $this->bookingModel->update($id, ['status' => 'cancelled']);
 
         return redirect()->to('booking/my-bookings')
@@ -133,15 +153,22 @@ class Booking extends BaseController
         $email = $this->request->getPost('email');
 
         if (empty($email)) {
-            return view('booking/check_bookings');
+            // Coba ambil dari session kalau user refresh halaman
+            $email = session()->get('booking_email');
+            if (empty($email)) {
+                return view('booking/check_bookings');
+            }
         }
+
+        // Simpan email ke session supaya cancel bisa divalidasi
+        session()->set('booking_email', $email);
 
         $bookings = $this->bookingModel->getBookingsByEmail($email);
 
         return view('booking/my_bookings', [
-            'title' => 'Daftar Booking Saya',
+            'title'    => 'Daftar Booking Saya',
             'bookings' => $bookings,
-            'email' => $email
+            'email'    => $email,
         ]);
     }
 
@@ -220,5 +247,38 @@ class Booking extends BaseController
             return redirect()->back()
                 ->with('error', 'Terjadi kesalahan saat mengupdate data');
         }
+    }
+
+    /**
+     * Update status cepat langsung dari tabel (konfirmasi / batalkan)
+     */
+    public function quickUpdate($id = null)
+    {
+        if ($id === null) {
+            return redirect()->to('booking/list')->with('error', 'ID tidak valid');
+        }
+
+        $status = $this->request->getPost('status');
+        $allowed = ['confirmed', 'cancelled', 'pending'];
+
+        if (!in_array($status, $allowed)) {
+            return redirect()->to('booking/list')->with('error', 'Status tidak valid');
+        }
+
+        $booking = $this->bookingModel->find($id);
+        if (!$booking) {
+            return redirect()->to('booking/list')->with('error', 'Data reservasi tidak ditemukan');
+        }
+
+        $this->bookingModel->update($id, ['status' => $status]);
+
+        $label = match($status) {
+            'confirmed' => 'dikonfirmasi',
+            'cancelled'  => 'dibatalkan',
+            'pending'    => 'dikembalikan ke pending',
+        };
+
+        return redirect()->to('booking/list')
+            ->with('success', "Reservasi atas nama {$booking['nama']} berhasil {$label}.");
     }
 }

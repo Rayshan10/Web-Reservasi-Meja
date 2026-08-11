@@ -91,7 +91,7 @@
                     <div class="success-card" data-aos="fade-up">
                         <i class="bi bi-check-circle success-icon"></i>
                         <h2 class="mb-4">Booking Berhasil!</h2>
-                        <p class="mb-4">Terima kasih, <strong><?= esc($booking['nama']) ?></strong>. Reservasi Anda telah berhasil dikonfirmasi.</p>
+                        <p class="mb-4">Terima kasih, <strong><?= esc($booking['nama']) ?></strong>. Permintaan reservasi Anda telah kami terima dan sedang menunggu konfirmasi dari tim kami.</p>
                         
                         <div class="booking-details">
                             <h5 class="mb-3">Detail Reservasi</h5>
@@ -99,16 +99,23 @@
                                 <div class="col-6 text-start">
                                     <p><i class="bi bi-calendar3 me-2"></i>Tanggal:</p>
                                     <p><i class="bi bi-clock me-2"></i>Waktu:</p>
-                                    <p><i class="bi bi-people me-2"></i>Jumlah Tamu:</p>
+                                    <p><i class="bi bi-people me-2"></i>Jumlah Tamu:</p>    
                                     <p><i class="bi bi-geo-alt me-2"></i>Meja:</p>
+                                    <p><i class="bi bi-hourglass-split me-2"></i>Status:</p>
                                 </div>
                                 <div class="col-6 text-start">
                                     <p><?= esc($booking['tanggal']) ?></p>
                                     <p><?= esc($booking['waktu']) ?></p>
                                     <p><?= esc($booking['jumlah_tamu']) ?> Orang</p>
                                     <p>No. <?= esc($booking['meja_id']) ?></p>
+                                    <p><span style="background:#fff3cd;color:#856404;padding:2px 10px;border-radius:50px;font-size:.82rem;font-weight:700;">⏳ Menunggu Konfirmasi</span></p>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="alert alert-warning mt-3 text-start" style="border-radius:10px;font-size:.88rem;">
+                            <i class="bi bi-info-circle-fill me-2"></i>
+                            Tim kami akan menghubungi Anda melalui email atau telepon untuk mengkonfirmasi reservasi dalam waktu <strong>1x24 jam</strong>.
                         </div>
 
                         <p class="redirect-text">

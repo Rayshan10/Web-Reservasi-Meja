@@ -1,355 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$pageTitle  = 'Dashboard';
+$breadcrumbs = [['label' => 'Dashboard', 'url' => '']];
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+ob_start();
+?>
 
-  <title>Dashboard</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+<section class="section dashboard">
 
-  <!-- Favicons -->
-  <link href="<?= base_url('assets1/img/favicon.png') ?>" rel="icon">
-  <link href="<?= base_url('assets1/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
+  <!-- ── Stat Cards ── -->
+  <div class="row g-3 mb-4">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="<?= base_url('assets1/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
-  <link href="<?= base_url('assets1/vendor/bootstrap-icons/bootstrap-icons.css') ?>" rel="stylesheet">
-  <link href="<?= base_url('assets1/vendor/boxicons/css/boxicons.min.css') ?>" rel="stylesheet">
-  <link href="<?= base_url('assets1/vendor/quill/quill.snow.css') ?>" rel="stylesheet">
-  <link href="<?= base_url('assets1/vendor/quill/quill.bubble.css') ?>" rel="stylesheet">
-  <link href="<?= base_url('assets1/vendor/remixicon/remixicon.css') ?>" rel="stylesheet">
-  <link href="<?= base_url('assets1/vendor/simple-datatables/style.css') ?>" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="<?= base_url('assets1/css/style.css') ?>" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Updated: Apr 20 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <span class="d-none d-lg-block">Yummy.</span>
-      </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div><!-- End Logo -->
-
-    <div class="search-bar">
-      <form class="search-form d-flex align-items-center" method="POST" action="#">
-        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
-        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-      </form>
-    </div><!-- End Search Bar -->
-
-    <nav class="header-nav ms-auto">
-      <ul class="d-flex align-items-center">
-
-        <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle " href="#">
-            <i class="bi bi-search"></i>
-          </a>
-        </li><!-- End Search Icon-->
-
-        <li class="nav-item dropdown">
-
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-bell"></i>
-            <span class="badge bg-primary badge-number">4</span>
-          </a><!-- End Notification Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-            <li class="dropdown-header">
-              You have 4 new notifications
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-exclamation-circle text-warning"></i>
-              <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>30 min. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-x-circle text-danger"></i>
-              <div>
-                <h4>Atque rerum nesciunt</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>1 hr. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-check-circle text-success"></i>
-              <div>
-                <h4>Sit rerum fuga</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>2 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-info-circle text-primary"></i>
-              <div>
-                <h4>Dicta reprehenderit</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>4 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li class="dropdown-footer">
-              <a href="#">Show all notifications</a>
-            </li>
-
-          </ul><!-- End Notification Dropdown Items -->
-
-        </li><!-- End Notification Nav -->
-
-        <li class="nav-item dropdown">
-
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-chat-left-text"></i>
-            <span class="badge bg-success badge-number">3</span>
-          </a><!-- End Messages Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
-            <li class="dropdown-header">
-              You have 3 new messages
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="<?= base_url('assets1/img/messages-1.jpg') ?>" alt="" class="rounded-circle">
-                <div>
-                  <h4>Maria Hudson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>4 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="<?= base_url('assets1/img/messages-2.jpg') ?>" alt="" class="rounded-circle">
-                <div>
-                  <h4>Anna Nelson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>6 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="<?= base_url('assets1/img/messages-3.jpg') ?>" alt="" class="rounded-circle">
-                <div>
-                  <h4>David Muldon</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>8 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="dropdown-footer">
-              <a href="#">Show all messages</a>
-            </li>
-
-          </ul><!-- End Messages Dropdown Items -->
-
-        </li><!-- End Messages Nav -->
-
-        <li class="nav-item dropdown pe-3">
-
-          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="<?= base_url('assets1/img/profile-img.jpg') ?>" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
-          </a><!-- End Profile Iamge Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              <span>Web Designer</span>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-person"></i>
-                <span>My Profile</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
-              </a>
-            </li>
-
-          </ul><!-- End Profile Dropdown Items -->
-        </li><!-- End Profile Nav -->
-
-      </ul>
-    </nav><!-- End Icons Navigation -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
-    <ul class="sidebar-nav" id="sidebar-nav">
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="<?= site_url('dashboard') ?>">
-          <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="<?= site_url('booking/list') ?>">
-          <i class="bi bi-calendar-check"></i>
-          <span>Reservasi</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="<?= site_url('auth/logout') ?>">
-          <i class="bi bi-box-arrow-right"></i>
-          <span>Logout</span>
-        </a>
-      </li>
-    </ul>
-  </aside><!-- End Sidebar-->
-
-  <main id="main" class="main">
-
-    <div class="pagetitle">
-      <h1>Dashboard</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
-
-    <section class="section dashboard">
-      <div class="row">
-        <div class="col-12">
-          <div class="card">
-            <div class="card-body">
-              <h1 class="text-center my-5">Selamat Datang Admin</h1>
-              <p class="text-center">Silakan gunakan menu di sidebar untuk mengelola reservasi</p>
-            </div>
+    <!-- Total Reservasi -->
+    <div class="col-6 col-xl-3">
+      <div class="card stat-card h-100">
+        <div class="card-body d-flex align-items-center gap-3 p-3">
+          <div class="icon-box" style="background:#e8f4fd;">
+            <i class="bi bi-calendar2-check" style="color:#0d6efd;"></i>
+          </div>
+          <div>
+            <div class="stat-value" style="color:#0d6efd;"><?= $total ?></div>
+            <div class="stat-label">Total Reservasi</div>
           </div>
         </div>
       </div>
-    </section>
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
     </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+    <!-- Pending -->
+    <div class="col-6 col-xl-3">
+      <div class="card stat-card h-100">
+        <div class="card-body d-flex align-items-center gap-3 p-3">
+          <div class="icon-box" style="background:#fff3cd;">
+            <i class="bi bi-hourglass-split" style="color:#ffc107;"></i>
+          </div>
+          <div>
+            <div class="stat-value" style="color:#ffc107;"><?= $total_pending ?></div>
+            <div class="stat-label">Menunggu</div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Confirmed -->
+    <div class="col-6 col-xl-3">
+      <div class="card stat-card h-100">
+        <div class="card-body d-flex align-items-center gap-3 p-3">
+          <div class="icon-box" style="background:#d4edda;">
+            <i class="bi bi-check2-circle" style="color:#28a745;"></i>
+          </div>
+          <div>
+            <div class="stat-value" style="color:#28a745;"><?= $total_confirmed ?></div>
+            <div class="stat-label">Dikonfirmasi</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.umd.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Cancelled -->
+    <div class="col-6 col-xl-3">
+      <div class="card stat-card h-100">
+        <div class="card-body d-flex align-items-center gap-3 p-3">
+          <div class="icon-box" style="background:#f8d7da;">
+            <i class="bi bi-x-circle" style="color:#dc3545;"></i>
+          </div>
+          <div>
+            <div class="stat-value" style="color:#dc3545;"><?= $total_cancelled ?></div>
+            <div class="stat-label">Dibatalkan</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  </div>
 
-</body>
+  <!-- ── Recent Bookings Table ── -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card yummy-card">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <span><i class="bi bi-clock-history me-2" style="color:#ce1212;"></i>Reservasi Terbaru</span>
+          <a href="<?= site_url('booking/list') ?>" class="btn btn-sm btn-outline-danger rounded-pill px-3" style="font-size:.8rem;">
+            Lihat Semua <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+        <div class="card-body p-0">
+          <?php if (empty($recent_bookings)): ?>
+            <div class="text-center py-5 text-muted">
+              <i class="bi bi-calendar-x" style="font-size:2.5rem;display:block;margin-bottom:10px;"></i>
+              Belum ada data reservasi.
+            </div>
+          <?php else: ?>
+          <div class="table-responsive">
+            <table class="table table-yummy mb-0">
+              <thead>
+                <tr>
+                  <th class="ps-4">Tamu</th>
+                  <th>Tanggal & Waktu</th>
+                  <th>Meja</th>
+                  <th>Tamu</th>
+                  <th>Status</th>
+                  <th class="text-center pe-4">Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach ($recent_bookings as $b): ?>
+                <tr>
+                  <td class="ps-4">
+                    <div class="fw-semibold" style="color:#37373f;"><?= esc($b['nama']) ?></div>
+                    <div class="text-muted" style="font-size:.8rem;"><?= esc($b['email']) ?></div>
+                  </td>
+                  <td>
+                    <div><?= date('d M Y', strtotime($b['tanggal'])) ?></div>
+                    <div class="text-muted" style="font-size:.8rem;"><?= esc($b['waktu']) ?> WIB</div>
+                  </td>
+                  <td><span class="fw-semibold">No. <?= esc($b['meja_id']) ?></span></td>
+                  <td><?= esc($b['jumlah_tamu']) ?> orang</td>
+                  <td>
+                    <span class="badge-<?= esc($b['status']) ?>">
+                      <?php echo match($b['status']) {
+                        'confirmed' => '✅ Dikonfirmasi',
+                        'pending'   => '⏳ Menunggu',
+                        'cancelled' => '❌ Dibatalkan',
+                        default     => ucfirst($b['status']),
+                      }; ?>
+                    </span>
+                  </td>
+                  <td class="text-center pe-4">
+                    <a href="<?= site_url('booking/edit/' . $b['id']) ?>" class="btn btn-action btn-edit">
+                      <i class="bi bi-pencil me-1"></i>Edit
+                    </a>
+                  </td>
+                </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table>
+          </div>
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</html>
+</section>
+
+<?php
+$content = ob_get_clean();
+include __DIR__ . '/_layout.php';
+?>

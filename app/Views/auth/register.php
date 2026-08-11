@@ -89,6 +89,7 @@
                 <?php endif; ?>
 
                 <form action="<?= site_url('auth/createAccount') ?>" method="post">
+                    <?= csrf_field() ?>
                     <div class="form-floating">
                         <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
                         <label for="username">Username</label>

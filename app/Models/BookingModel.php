@@ -42,7 +42,7 @@ class BookingModel extends Model
         'jumlah_tamu' => 'required',
         'meja_id'     => 'required|numeric',
     ];
-    
+
     protected $validationMessages = [
         'nama' => [
             'required'    => 'Nama tidak boleh kosong',

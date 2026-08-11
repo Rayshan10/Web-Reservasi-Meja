@@ -1,68 +1,288 @@
-# CodeIgniter 4 Application Starter
+# 🍽️ Yummy Restaurant — Web Booking Meja
 
-## What is CodeIgniter?
+Aplikasi web untuk reservasi meja restoran berbasis **CodeIgniter 4**, dilengkapi dengan dashboard admin untuk mengelola seluruh data reservasi.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+---
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## 📋 Tentang Proyek
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+**Yummy Restaurant** adalah aplikasi web yang memungkinkan pelanggan melakukan pemesanan meja secara online, memantau status reservasi, dan membatalkan booking jika diperlukan. Admin dapat mengelola seluruh data reservasi melalui dashboard yang dilengkapi fitur konfirmasi, pembatalan, dan penghapusan data.
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+Proyek ini dikembangkan sebagai **tugas besar mata kuliah Pemrograman Web** menggunakan framework CodeIgniter 4 dengan konsep MVC.
 
-## Installation & updates
+---
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+## ✨ Fitur Utama
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+### 👤 Sisi Pengguna
 
-## Setup
+- **Registrasi & Login** — Autentikasi dengan enkripsi password menggunakan `password_hash()`
+- **Halaman Beranda** — Informasi restoran, menu, events, chef, galeri, dan kontak
+- **Form Booking Meja** — Pilih tanggal, waktu, jumlah tamu, dan meja secara visual
+- **Cek Ketersediaan Meja** — Sistem otomatis menolak booking jika meja sudah terisi di waktu yang sama
+- **Halaman Sukses Booking** — Menampilkan detail reservasi setelah berhasil submit
+- **Riwayat Booking** — Cek semua reservasi berdasarkan email
+- **Batalkan Booking** — User hanya bisa membatalkan booking miliknya sendiri (divalidasi via session)
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+### 🔧 Sisi Admin
 
-## Important Change with index.php
+- **Dashboard** — Statistik real-time: total reservasi, menunggu, dikonfirmasi, dibatalkan
+- **Tabel Reservasi Terbaru** — Menampilkan 5 booking terbaru di halaman utama dashboard
+- **Kelola Semua Reservasi** — Tabel lengkap dengan search, pagination, dan filter status
+- **Konfirmasi Cepat** — Tombol konfirmasi/batalkan langsung dari tabel tanpa masuk halaman edit
+- **Edit Reservasi** — Ubah semua detail booking termasuk status
+- **Hapus Reservasi** — Dengan konfirmasi modal sebelum data dihapus
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+### 🔒 Keamanan
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+- CSRF protection aktif di semua form
+- Role-based access control (user vs admin)
+- Validasi input di frontend dan backend
+- Validasi tanggal booking tidak boleh di masa lalu
+- Proteksi cancel booking berbasis session (bukan URL parameter)
+- Password di-hash dengan `PASSWORD_DEFAULT` (bcrypt)
 
-**Please** read the user guide for a better explanation of how CI4 works!
+---
 
-## Repository Management
+## 🛠️ Teknologi yang Digunakan
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+| Teknologi             | Keterangan                          |
+| --------------------- | ----------------------------------- |
+| **PHP 8.x**           | Bahasa pemrograman utama            |
+| **CodeIgniter 4**     | Framework PHP (MVC)                 |
+| **MySQL**             | Database                            |
+| **Bootstrap 5**       | CSS framework untuk tampilan        |
+| **Bootstrap Icons**   | Icon set                            |
+| **AOS.js**            | Animasi scroll pada halaman utama   |
+| **Simple-Datatables** | Tabel interaktif di dashboard admin |
+| **Laragon**           | Local development environment       |
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+---
 
-## Server Requirements
+## 📁 Struktur Proyek
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+```
+yummy/
+├── app/
+│   ├── Config/
+│   │   ├── Filters.php       # Konfigurasi filter (CSRF, Auth, Admin)
+│   │   └── Routes.php        # Definisi semua route
+│   ├── Controllers/
+│   │   ├── Auth.php          # Login, register, logout
+│   │   ├── Booking.php       # Semua logika booking
+│   │   ├── Dashboard.php     # Dashboard admin
+│   │   └── Home.php          # Halaman beranda
+│   ├── Filters/
+│   │   ├── AuthFilter.php    # Proteksi halaman user (harus login)
+│   │   └── AdminFilter.php   # Proteksi halaman admin (harus role admin)
+│   ├── Models/
+│   │   ├── BookingModel.php  # Model tabel bookings
+│   │   └── UserModel.php     # Model tabel users
+│   ├── Views/
+│   │   ├── auth/             # Login & register
+│   │   ├── booking/          # Form booking, sukses, my-bookings
+│   │   ├── dashboard/        # Dashboard admin + layout
+│   │   └── home.php          # Halaman utama restoran
+│   └── Database/
+│       └── Migrations/       # Struktur tabel users & bookings
+└── public/                   # Entry point & assets
+```
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+---
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+## 🗄️ Struktur Database
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+### Tabel `users`
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+| Kolom      | Tipe         | Keterangan          |
+| ---------- | ------------ | ------------------- |
+| id         | INT (PK)     | Auto increment      |
+| username   | VARCHAR(50)  | Nama pengguna       |
+| email      | VARCHAR(100) | Email unik          |
+| password   | VARCHAR(255) | Bcrypt hash         |
+| role       | ENUM         | `admin` atau `user` |
+| created_at | DATETIME     |                     |
+| updated_at | DATETIME     |                     |
+
+### Tabel `bookings`
+
+| Kolom       | Tipe         | Keterangan                          |
+| ----------- | ------------ | ----------------------------------- |
+| id          | INT (PK)     | Auto increment                      |
+| nama        | VARCHAR(100) | Nama pemesan                        |
+| telepon     | VARCHAR(15)  | Nomor telepon                       |
+| email       | VARCHAR(100) | Email pemesan                       |
+| tanggal     | DATE         | Tanggal reservasi                   |
+| waktu       | VARCHAR(10)  | Waktu reservasi                     |
+| jumlah_tamu | VARCHAR(10)  | Jumlah tamu                         |
+| meja_id     | INT          | Nomor meja (1–6)                    |
+| catatan     | TEXT         | Catatan khusus                      |
+| status      | ENUM         | `pending`, `confirmed`, `cancelled` |
+| created_at  | DATETIME     |                                     |
+| updated_at  | DATETIME     |                                     |
+
+---
+
+## 🚀 Cara Instalasi
+
+### Prasyarat
+
+- PHP >= 8.0
+- MySQL / MariaDB
+- Composer
+- Web server (Apache/Nginx) — disarankan menggunakan **Laragon**
+
+### Langkah Instalasi
+
+**1. Clone repository**
+
+```bash
+git clone https://github.com/Rayshan10/Yummy.git
+cd yummy
+```
+
+**2. Install dependencies**
+
+```bash
+composer install
+```
+
+**3. Salin dan konfigurasi file environment**
+
+```bash
+cp env .env
+```
+
+Edit file `.env`:
+
+```env
+CI_ENVIRONMENT = development
+app.baseURL = 'http://localhost/yummy/public'
+
+database.default.hostname = localhost
+database.default.database = book_a_table
+database.default.username = root
+database.default.password =
+database.default.DBDriver = MySQLi
+```
+
+**4. Buat database**
+
+Buat database baru bernama `book_a_table` di MySQL, lalu jalankan migration:
+
+```bash
+php spark migrate
+```
+
+**5. Buat akun admin**
+
+Jalankan aplikasi, lalu daftarkan akun baru melalui halaman `/auth/register`. Setelah itu, ubah kolom `role` menjadi `admin` langsung di database:
+
+```sql
+UPDATE users SET role = 'admin' WHERE email = 'email_kamu@example.com';
+```
+
+**6. Akses aplikasi**
+
+Buka browser dan akses:
+
+```
+http://localhost/yummy/public
+```
+
+---
+
+## 📸 Screenshot
+
+### Halaman Beranda
+
+<p align="center">
+    <img src="screenshoot/home.png" alt="Home" width="900">
+</p>
+
+<p align="center">
+    <img src="screenshoot/about.png" alt="About" width="900">
+</p>
+
+<p align="center">
+    <img src="screenshoot/menu.png" alt="Menu" width="900">
+</p>
+
+<p align="center">
+    <img src="screenshoot/events.png" alt="Events" width="900">
+</p>
+
+<p align="center">
+    <img src="screenshoot/chefs.png" alt="Chefs" width="900">
+</p>
+
+<p align="center">
+    <img src="screenshoot/galery.png" alt="Galery" width="900">
+</p>
+
+<p align="center">
+    <img src="screenshoot/contact.png" alt="Contact" width="900">
+</p>
+
+### Form Booking
+
+<p align="center">
+    <img src="screenshoot/formbooking.png" alt="Form" width="900">
+</p>
+
+<p align="center">
+    <img src="screenshoot/validasibooking.png" alt="Validasi" width="900">
+</p>
+
+<p align="center">
+    <img src="screenshoot/cekbooking.png" alt="Cek" width="900">
+</p>
+
+<p align="center">
+    <img src="screenshoot/riwayatbooking.png" alt="Riwayat" width="900">
+</p>
+
+### Dashboard Admin
+
+<p align="center">
+    <img src="screenshoot/dashboard.png" alt="Dashboard" width="900">
+</p>
+
+<p align="center">
+    <img src="screenshoot/data.png" alt="Data" width="900">
+</p>
+
+---
+
+## 🔄 Alur Kerja Aplikasi
+
+```
+User Register/Login
+        ↓
+Halaman Beranda
+        ↓
+Form Booking → Validasi → Cek Ketersediaan Meja
+        ↓
+Status: PENDING (menunggu konfirmasi admin)
+        ↓
+Admin Login → Dashboard → Konfirmasi/Batalkan
+        ↓
+Status: CONFIRMED / CANCELLED
+        ↓
+User cek status via "Booking Saya"
+```
+
+---
+
+## 👨‍💻 Developer
+
+Dikembangkan oleh **Rayshan Gani Putra** sebagai proyek tugas kuliah.
+
+- GitHub: https://github.com/Rayshan10
+- Email: rayshangp@gmail.com
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dibuat untuk keperluan akademis. Template frontend menggunakan [Yummy - BootstrapMade](https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/) dan [NiceAdmin - BootstrapMade](https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/).

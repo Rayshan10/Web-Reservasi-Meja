@@ -17,6 +17,7 @@ $routes->group('booking', ['filter' => 'admin'], function($routes) {
     $routes->get('list', 'Booking::list');
     $routes->get('edit/(:num)', 'Booking::edit/$1');
     $routes->post('update/(:num)', 'Booking::update/$1');
+    $routes->post('quick-update/(:num)', 'Booking::quickUpdate/$1');
     $routes->get('delete/(:num)', 'Booking::delete/$1');
 });
 
