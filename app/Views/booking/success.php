@@ -62,6 +62,19 @@
             background: #b31212;
             color: white;
         }
+        .btn-home-outline {
+            background: transparent;
+            color: #ce1212;
+            padding: 8px 25px;
+            border-radius: 50px;
+            border: 2px solid #ce1212;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        .btn-home-outline:hover {
+            background: #ce1212;
+            color: white;
+        }
     </style>
 
     <script>
@@ -107,7 +120,7 @@
                             <a href="<?= site_url('home') ?>" class="btn btn-home">
                                 Kembali ke Beranda
                             </a>
-                            <a href="<?= site_url('booking/my-bookings') ?>" class="btn btn-outline-danger rounded-pill px-4">
+                            <a href="<?= site_url('booking/my-bookings') ?>" class="btn btn-home-outline">
                                 <i class="bi bi-calendar2-check me-1"></i> Lihat Booking Saya
                             </a>
                         </div>
