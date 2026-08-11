@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Yummy - Home</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>Yummy Restaurant - Fine Dining Jakarta</title>
+    <meta name="description" content="Yummy Restaurant Jakarta - Restoran fine dining dengan menu fusion Indonesia-Western. Nikmati cita rasa autentik dengan sentuhan modern di jantung Kemang, Jakarta Selatan.">
+    <meta name="keywords" content="restoran jakarta, fine dining jakarta, booking meja jakarta, yummy restaurant, fusion indonesia western">
 
     <!-- Favicons -->
     <link href="<?= base_url('assets/img/favicon.png') ?>" rel="icon">
@@ -75,8 +75,8 @@
       <div class="container">
         <div class="row gy-4 justify-content-center justify-content-lg-between">
           <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h1>
-            <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>
+            <h1 data-aos="fade-up">Cita Rasa Autentik<br>dalam Setiap Sajian</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Nikmati pengalaman makan malam yang tak terlupakan dengan menu fusion Indonesia–Western terbaik, diracik langsung oleh chef berpengalaman kami di jantung kota Jakarta.</p>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
               <a href="<?= site_url('booking') ?>" class="btn-get-started">Book a Table</a>
               <a href="<?= site_url('booking/my-bookings') ?>" class="btn-watch-video d-flex align-items-center ms-4">
@@ -115,17 +115,15 @@
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Yummy Restaurant hadir sejak 2015 dengan satu misi sederhana — menghadirkan cita rasa masakan Indonesia yang kaya rempah dalam balutan presentasi modern yang elegan.
               </p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Bahan baku segar pilihan yang didatangkan langsung dari petani lokal setiap hari.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Setiap hidangan diracik oleh chef berpengalaman lebih dari 15 tahun di industri kuliner.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Suasana restoran yang nyaman dan hangat, cocok untuk makan bersama keluarga, kencan, maupun pertemuan bisnis.</span></li>
               </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                Kami percaya bahwa makanan yang baik bukan hanya soal rasa, tapi juga soal momen. Di Yummy, setiap kunjungan adalah pengalaman yang kami rancang dengan penuh perhatian — dari sambutan pertama hingga suapan terakhir.
               </p>
 
               <div class="position-relative mt-4">
@@ -149,13 +147,12 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="why-box">
-              <h3>Why Choose Yummy</h3>
+              <h3>Mengapa Memilih Yummy?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                Kami bukan sekadar restoran. Yummy adalah tempat di mana setiap hidangan dibuat dengan sepenuh hati, menggunakan bahan-bahan terbaik, dan disajikan dalam suasana yang membuat Anda merasa seperti di rumah sendiri.
               </p>
               <div class="text-center">
-                <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+                <a href="#about" class="more-btn"><span>Selengkapnya</span> <i class="bi bi-chevron-right"></i></a>
               </div>
             </div>
           </div><!-- End Why Box -->
@@ -165,25 +162,25 @@
 
               <div class="col-xl-4">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-clipboard-data"></i>
-                  <h4>Corporis voluptates officia eiusmod</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <i class="bi bi-award"></i>
+                  <h4>Bahan Premium Pilihan</h4>
+                  <p>Setiap bahan baku kami seleksi ketat dari sumber terpercaya untuk memastikan kualitas dan kesegaran di setiap piring.</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-gem"></i>
-                  <h4>Ullamco laboris ladore lore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <h4>Chef Berpengalaman</h4>
+                  <p>Tim chef kami telah meraih berbagai penghargaan kuliner nasional dan membawa pengalaman memasak dari berbagai penjuru dunia.</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-inboxes"></i>
-                  <h4>Labore consequatur incidid dolore</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  <i class="bi bi-heart"></i>
+                  <h4>Layanan Sepenuh Hati</h4>
+                  <p>Dari reservasi hingga dessert terakhir, tim kami hadir untuk memastikan pengalaman makan Anda benar-benar sempurna.</p>
                 </div>
               </div><!-- End Icon Box -->
 
@@ -207,29 +204,29 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
+              <span data-purecounter-start="0" data-purecounter-end="12500" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Pelanggan Puas</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
+              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Menu Pilihan</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
+              <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Tahun Berpengalaman</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Workers</p>
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Staff Profesional</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -290,70 +287,46 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="menu-img img-fluid" alt="Tahu Crispy Sambal Matah"></a>
+                <h4>Tahu Crispy Sambal Matah</h4>
+                <p class="ingredients">Tahu sutra, sambal matah, kemangi, jeruk limau</p>
+                <p class="price">Rp 35.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="menu-img img-fluid" alt="Bruschetta Tempe"></a>
+                <h4>Bruschetta Tempe</h4>
+                <p class="ingredients">Sourdough, tempe marinasi, tomat ceri, basil, olive oil</p>
+                <p class="price">Rp 42.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="menu-img img-fluid" alt="Soto Betawi Velouté"></a>
+                <h4>Soto Betawi Velouté</h4>
+                <p class="ingredients">Kaldu soto betawi, santan, daging sapi, kentang, emping</p>
+                <p class="price">Rp 58.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="menu-img img-fluid" alt="Bakwan Jagung Manis"></a>
+                <h4>Bakwan Jagung Manis</h4>
+                <p class="ingredients">Jagung manis, daun bawang, wortel, saus cabai merah</p>
+                <p class="price">Rp 32.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="menu-img img-fluid" alt="Lumpia Ayam Truffle"></a>
+                <h4>Lumpia Ayam Truffle</h4>
+                <p class="ingredients">Kulit lumpia, ayam cincang, truffle oil, rebung, saus hoisin</p>
+                <p class="price">Rp 65.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="menu-img img-fluid" alt="Gado-Gado Platter"></a>
+                <h4>Gado-Gado Platter</h4>
+                <p class="ingredients">Sayuran rebus pilihan, tahu, tempe, telur, saus kacang premium</p>
+                <p class="price">Rp 48.000</p>
+              </div>
 
             </div>
           </div><!-- End Starter Menu Content -->
@@ -368,70 +341,46 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="menu-img img-fluid" alt="Nasi Uduk Yummy"></a>
+                <h4>Nasi Uduk Yummy</h4>
+                <p class="ingredients">Nasi uduk, ayam goreng rempah, tempe orek, telur balado, kerupuk</p>
+                <p class="price">Rp 55.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="menu-img img-fluid" alt="Avocado Toast & Telur"></a>
+                <h4>Avocado Toast & Telur</h4>
+                <p class="ingredients">Sourdough panggang, alpukat, telur poached, microgreens, chili flakes</p>
+                <p class="price">Rp 62.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="menu-img img-fluid" alt="Bubur Ayam Spesial"></a>
+                <h4>Bubur Ayam Spesial</h4>
+                <p class="ingredients">Bubur beras, ayam suwir, cakwe, kacang, bawang goreng, kaldu ayam</p>
+                <p class="price">Rp 45.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="menu-img img-fluid" alt="French Toast Pandan"></a>
+                <h4>French Toast Pandan</h4>
+                <p class="ingredients">Roti brioche, custard pandan, maple syrup, fresh berries, whipped cream</p>
+                <p class="price">Rp 58.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="menu-img img-fluid" alt="Omelette Rendang"></a>
+                <h4>Omelette Rendang</h4>
+                <p class="ingredients">Telur omega, rendang sapi, keju mozzarella, paprika, daun bawang</p>
+                <p class="price">Rp 70.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="menu-img img-fluid" alt="Smoothie Bowl Tropis"></a>
+                <h4>Smoothie Bowl Tropis</h4>
+                <p class="ingredients">Acai, mangga, pisang, granola, chia seed, kelapa parut, madu</p>
+                <p class="price">Rp 52.000</p>
+              </div>
 
             </div>
           </div><!-- End Breakfast Menu Content -->
@@ -446,70 +395,46 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="menu-img img-fluid" alt="Nasi Campur Bali"></a>
+                <h4>Nasi Campur Bali</h4>
+                <p class="ingredients">Nasi putih, ayam betutu, sate lilit, lawar, plecing kangkung, sambal</p>
+                <p class="price">Rp 85.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="menu-img img-fluid" alt="Grilled Chicken Bumbu Rujak"></a>
+                <h4>Grilled Chicken Bumbu Rujak</h4>
+                <p class="ingredients">Ayam kampung, bumbu rujak, nasi putih, lalapan, sambal terasi</p>
+                <p class="price">Rp 92.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="menu-img img-fluid" alt="Pasta Rendang Sapi"></a>
+                <h4>Pasta Rendang Sapi</h4>
+                <p class="ingredients">Fettuccine, daging rendang sapi, parmesan, kemangi, cabai rawit</p>
+                <p class="price">Rp 110.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="menu-img img-fluid" alt="Sop Buntut Bakar"></a>
+                <h4>Sop Buntut Bakar</h4>
+                <p class="ingredients">Buntut sapi, kentang, wortel, kaldu rempah, nasi putih, emping</p>
+                <p class="price">Rp 120.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="menu-img img-fluid" alt="Mie Goreng Seafood Premium"></a>
+                <h4>Mie Goreng Seafood</h4>
+                <p class="ingredients">Mie telur, udang, cumi, kerang, sayuran, telur, kecap manis</p>
+                <p class="price">Rp 98.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="menu-img img-fluid" alt="Caesar Salad Ayam Suwir"></a>
+                <h4>Caesar Salad Ayam Suwir</h4>
+                <p class="ingredients">Romaine, ayam suwir, crouton, parmesan, saus caesar, telur puyuh</p>
+                <p class="price">Rp 75.000</p>
+              </div>
 
             </div>
           </div><!-- End Lunch Menu Content -->
@@ -524,70 +449,46 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-1.png') ?>" class="menu-img img-fluid" alt="Ribeye Steak Bumbu Bali"></a>
+                <h4>Ribeye Steak Bumbu Bali</h4>
+                <p class="ingredients">Ribeye 250gr, bumbu bali, mashed potato, grilled asparagus, red wine jus</p>
+                <p class="price">Rp 245.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-2.png') ?>" class="menu-img img-fluid" alt="Salmon Kuah Pindang"></a>
+                <h4>Salmon Kuah Pindang</h4>
+                <p class="ingredients">Salmon fillet, kuah pindang palembang, sayuran, nasi putih</p>
+                <p class="price">Rp 185.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-3.png') ?>" class="menu-img img-fluid" alt="Duck Confit Kecombrang"></a>
+                <h4>Duck Confit Kecombrang</h4>
+                <p class="ingredients">Bebek confit, sambal kecombrang, kentang rosti, pickled vegetables</p>
+                <p class="price">Rp 195.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-4.png') ?>" class="menu-img img-fluid" alt="Rawon Daging Wagyu"></a>
+                <h4>Rawon Daging Wagyu</h4>
+                <p class="ingredients">Wagyu saikoro, kuah rawon hitam, telur asin, tauge, kerupuk udang</p>
+                <p class="price">Rp 210.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-5.png') ?>" class="menu-img img-fluid" alt="Lobster Thermidor Saus Padang"></a>
+                <h4>Lobster Saus Padang</h4>
+                <p class="ingredients">Lobster segar, saus cabai Padang, bawang bombay, paprika, nasi putih</p>
+                <p class="price">Rp 350.000</p>
+              </div>
 
               <div class="col-lg-4 menu-item">
-                <a href="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
+                <a href="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="glightbox"><img src="<?= base_url('assets/img/menu/menu-item-6.png') ?>" class="menu-img img-fluid" alt="Dessert Platter Nusantara"></a>
+                <h4>Dessert Platter Nusantara</h4>
+                <p class="ingredients">Klepon, dadar gulung, onde-onde, es krim kelapa, kue lapis, saus pandan</p>
+                <p class="price">Rp 88.000</p>
+              </div>
 
             </div>
           </div><!-- End Dinner Menu Content -->
@@ -634,18 +535,18 @@
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                        <span>Sudah beberapa kali makan di Yummy dan tidak pernah kecewa. Rendang wagyu-nya juara banget, dagingnya empuk dan bumbunya meresap sempurna. Suasananya juga nyaman untuk dinner romantis. Highly recommended!</span>
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
+                      <h3>Anisa Rahmawati</h3>
+                      <h4>Food Blogger</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="<?= base_url('assets/img/testimonials/testimonials-1.jpg') ?>" class="img-fluid testimonial-img" alt="">
+                    <img src="<?= base_url('assets/img/testimonials/testimonials-1.jpg') ?>" class="img-fluid testimonial-img" alt="Anisa Rahmawati">
                   </div>
                 </div>
               </div>
@@ -658,18 +559,18 @@
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                        <span>Kami mengadakan dinner ulang tahun di Yummy dan semuanya berjalan luar biasa. Staff-nya ramah dan profesional, makanannya enak, dan dekorasinya memukau. Akan pasti kembali lagi untuk acara keluarga berikutnya!</span>
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
+                      <h3>Budi Santoso</h3>
+                      <h4>Pengusaha</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="<?= base_url('assets/img/testimonials/testimonials-2.jpg') ?>" class="img-fluid testimonial-img" alt="">
+                    <img src="<?= base_url('assets/img/testimonials/testimonials-2.jpg') ?>" class="img-fluid testimonial-img" alt="Budi Santoso">
                   </div>
                 </div>
               </div>
@@ -682,18 +583,18 @@
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                        <span>Soto betawi velouté-nya adalah kreasi yang genius! Perpaduan teknik memasak Prancis dengan cita rasa Jakarta asli. Sebagai pecinta kuliner, saya sangat terkesan dengan inovasi menu di Yummy. Chefnya berbakat!</span>
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
+                      <h3>Chef Deandra Putri</h3>
+                      <h4>Culinary Instructor</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="<?= base_url('assets/img/testimonials/testimonials-3.jpg') ?>" class="img-fluid testimonial-img" alt="">
+                    <img src="<?= base_url('assets/img/testimonials/testimonials-3.jpg') ?>" class="img-fluid testimonial-img" alt="Chef Deandra Putri">
                   </div>
                 </div>
               </div>
@@ -706,18 +607,18 @@
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                        <span>Tempat favorit saya untuk business lunch. Makanannya konsisten enak setiap kali datang, porsinya cukup, dan suasananya kondusif untuk meeting. Sistem booking online-nya juga praktis banget, tinggal pilih meja dan konfirmasi!</span>
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
+                      <h3>Rizky Firmansyah</h3>
+                      <h4>Marketing Director</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="<?= base_url('assets/img/testimonials/testimonials-4.jpg') ?>" class="img-fluid testimonial-img" alt="">
+                    <img src="<?= base_url('assets/img/testimonials/testimonials-4.jpg') ?>" class="img-fluid testimonial-img" alt="Rizky Firmansyah">
                   </div>
                 </div>
               </div>
@@ -765,34 +666,34 @@
           <div class="swiper-wrapper">
 
             <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(<?= base_url('assets/img/events-1.jpg') ?>)">
-              <h3>Custom Parties</h3>
-              <div class="price align-self-start">$99</div>
+              <h3>Private Dinner</h3>
+              <div class="price align-self-start">Mulai Rp 500.000/orang</div>
               <p class="description">
-                Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.
+                Nikmati makan malam eksklusif di ruang private kami yang elegan. Cocok untuk kencan, anniversary, atau perayaan spesial berdua. Termasuk dekorasi meja, menu 4-course, dan musisi akustik pilihan.
               </p>
             </div><!-- End Event item -->
 
             <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(<?= base_url('assets/img/events-2.jpg') ?>)">
-              <h3>Private Parties</h3>
-              <div class="price align-self-start">$289</div>
+              <h3>Birthday Party</h3>
+              <div class="price align-self-start">Mulai Rp 3.500.000</div>
               <p class="description">
-                In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut dolores ea assumenda et. Delectus saepe accusamus aspernatur.
+                Rayakan hari spesialmu bersama orang-orang tercinta di Yummy. Kami sediakan dekorasi balon dan bunga, kue ulang tahun custom, menu buffet pilihan, dan dokumentasi foto profesional.
               </p>
             </div><!-- End Event item -->
 
             <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(<?= base_url('assets/img/events-3.jpg') ?>)">
-              <h3>Birthday Parties</h3>
-              <div class="price align-self-start">$499</div>
+              <h3>Corporate Event</h3>
+              <div class="price align-self-start">Mulai Rp 8.500.000</div>
               <p class="description">
-                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
+                Solusi lengkap untuk business gathering, team dinner, hingga peluncuran produk. Tersedia fasilitas proyektor, sound system, dan tim event organizer yang berpengalaman mendampingi acara Anda.
               </p>
             </div><!-- End Event item -->
 
             <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(<?= base_url('assets/img/events-4.jpg') ?>)">
-              <h3>Wedding Parties</h3>
-              <div class="price align-self-start">$899</div>
+              <h3>Wedding Reception</h3>
+              <div class="price align-self-start">Mulai Rp 25.000.000</div>
               <p class="description">
-                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
+                Jadikan hari pernikahan Anda semakin berkesan dengan paket wedding reception Yummy. Termasuk dekorasi premium, cocktail reception, makan malam mewah untuk hingga 100 tamu, dan tim wedding planner dedicat.
               </p>
             </div><!-- End Event item -->
 
@@ -809,8 +710,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>chefs</h2>
-        <p><span>Our</span> <span class="description-title">Proffesional Chefs<br></span></p>
+        <h2>Tim Chef</h2>
+        <p><span>Kenali</span> <span class="description-title">Chef Profesional Kami</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -820,18 +721,18 @@
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="<?= base_url('assets/img/chefs/chefs-1.jpg') ?>" class="img-fluid" alt="">
+                <img src="<?= base_url('assets/img/chefs/chefs-1.jpg') ?>" class="img-fluid" alt="Chef Arman Wijaya">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Master Chef</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                <h4>Arman Wijaya</h4>
+                <span>Executive Chef</span>
+                <p>Lulusan Le Cordon Bleu Paris dengan pengalaman 18 tahun. Chef Arman adalah otak di balik konsep fusion Indonesia–Western yang menjadi identitas unik Yummy Restaurant.</p>
               </div>
             </div>
           </div><!-- End Chef Team Member -->
@@ -839,18 +740,18 @@
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="<?= base_url('assets/img/chefs/chefs-2.jpg') ?>" class="img-fluid" alt="">
+                <img src="<?= base_url('assets/img/chefs/chefs-2.jpg') ?>" class="img-fluid" alt="Chef Sari Dewi">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Patissier</span>
-                <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+                <h4>Sari Dewi</h4>
+                <span>Pastry Chef</span>
+                <p>Spesialis dessert dan kue tradisional yang dimodernisasi. Chef Sari meraih penghargaan Best Pastry Chef Indonesia 2022 dan dikenal karena kreasi dessert platter Nusantara yang memukau.</p>
               </div>
             </div>
           </div><!-- End Chef Team Member -->
@@ -858,18 +759,18 @@
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-                <img src="<?= base_url('assets/img/chefs/chefs-3.jpg') ?>" class="img-fluid" alt="">
+                <img src="<?= base_url('assets/img/chefs/chefs-3.jpg') ?>" class="img-fluid" alt="Chef Bagas Pratama">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Cook</span>
-                <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+                <h4>Bagas Pratama</h4>
+                <span>Sous Chef</span>
+                <p>Ahli masakan nusantara dengan keahlian khusus pada hidangan berbasis seafood dan masakan Sumatra. Chef Bagas memastikan standar kualitas bahan baku dan konsistensi rasa di setiap sajian.</p>
               </div>
             </div>
           </div><!-- End Chef Team Member -->
@@ -963,8 +864,8 @@
             <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="icon bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>Alamat</h3>
+                <p>Jl. Kemang Raya No. 18, Kemang, Jakarta Selatan, DKI Jakarta 12730</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -973,8 +874,8 @@
             <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="icon bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <h3>Hubungi Kami</h3>
+                <p>+62 21 7884 5566 &nbsp;|&nbsp; +62 812 9000 1234</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -983,8 +884,8 @@
             <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
               <i class="icon bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <h3>Email</h3>
+                <p>reservasi@yummyrestaurant.id &nbsp;|&nbsp; info@yummyrestaurant.id</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -993,8 +894,8 @@
             <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
               <i class="icon bi bi-clock flex-shrink-0"></i>
               <div>
-                <h3>Opening Hours<br></h3>
-                <p><strong>Mon-Sat:</strong> 11AM - 23PM; <strong>Sunday:</strong> Closed</p>
+                <h3>Jam Operasional</h3>
+                <p><strong>Senin – Sabtu:</strong> 10.00 – 22.00 WIB &nbsp;|&nbsp; <strong>Minggu:</strong> 10.00 – 21.00 WIB</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -1013,21 +914,19 @@
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-geo-alt icon"></i>
           <div class="address">
-            <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p></p>
+            <h4>Alamat</h4>
+            <p>Jl. Kemang Raya No. 18</p>
+            <p>Jakarta Selatan 12730</p>
           </div>
-
         </div>
 
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-telephone icon"></i>
           <div>
-            <h4>Contact</h4>
+            <h4>Kontak</h4>
             <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
+              <strong>Telepon:</strong> <span>+62 21 7884 5566</span><br>
+              <strong>Email:</strong> <span>info@yummyrestaurant.id</span><br>
             </p>
           </div>
         </div>
@@ -1035,10 +934,10 @@
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-clock icon"></i>
           <div>
-            <h4>Opening Hours</h4>
+            <h4>Jam Buka</h4>
             <p>
-              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
-              <strong>Sunday</strong>: <span>Closed</span>
+              <strong>Sen – Sab:</strong> <span>10.00 – 22.00 WIB</span><br>
+              <strong>Minggu:</strong> <span>10.00 – 21.00 WIB</span>
             </p>
           </div>
         </div>
